@@ -24,8 +24,9 @@ int main(){
         }
         std::cout << "\n";
     }
-    
-    double b[(n*(n + 2))/2];
+
+    int size = (n*(n + 2))/2;
+    double *b = new double[size];
     double sum = 0;
     int count  = 0;
     for(int i = 0; i < n/2; i++){
@@ -46,7 +47,7 @@ int main(){
 
 
 
-    for(int i = 0; i < (n*(n + 2))/2; i++){
+    for(int i = 0; i < size; i++){
         std::cout << b[i] << " ";
     }
     std::cout << "\n";
@@ -54,10 +55,10 @@ int main(){
     
     double min;
     double max;
-    for(int i = 0; i < (n*(n + 2))/2; i++){
+    for(int i = 0; i < size; i++){
         min = b[i];
         max = b[i];
-        for(int j = 0; j < (n*(n + 2))/2; j++ ){
+        for(int j = 0; j < size; j++ ){
             if(b[j] <= min){
                 min = b[j];
             }

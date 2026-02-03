@@ -14,4 +14,4 @@
 
 - [№2](https://github.com/tamerlan038/BSUIR/tree/tasks/№2)
 
-- [№3](https://github.com/tamerlan038/BSUIR/tree/tasks/№3)
+- [№3 мини-казик](https://github.com/tamerlan038/BSUIR/tree/tasks/№3)

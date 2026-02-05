@@ -10,8 +10,10 @@
 
 # Мини игры и задания
 
-- [№1](https://github.com/tamerlan038/BSUIR/tree/tasks/№1)
+- [№1](https://github.com/tamerlan038/BSUIR/tree/tasks/%E2%84%961)
 
-- [№2](https://github.com/tamerlan038/BSUIR/tree/tasks/№2)
+- [№2](https://github.com/tamerlan038/BSUIR/tree/tasks/%E2%84%962)
 
-- [№3 мини-казик](https://github.com/tamerlan038/BSUIR/tree/tasks/№3)
+- [№3 мини-казик](https://github.com/tamerlan038/BSUIR/tree/tasks/%E2%84%963)
+
+

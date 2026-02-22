@@ -199,38 +199,3 @@ int main() {
         }
     }
 }
-
-
-
-
-// void remove_first(TwoWay*& head, TwoWay*& tail){
-//     if(head == NULL){
-//         std::cout << "Empthy!" << std::endl;
-//         return;
-//     }
-//     TwoWay* current = head;
-//     head = head->next;
-//     if(head != NULL){
-//         head->prev = NULL;
-//     }else{
-//         tail = NULL;
-//     }
-//     std::cout << "Element " << current->data << " deleted" << std::endl;
-//     delete current;
-// }
-
-// void removelast(TwoWay*& head, TwoWay*& tail){
-//     if(head == NULL){
-//         std::cout << "Empthy!" << std::endl;
-//         return;
-//     }
-//     TwoWay* current = tail;
-//     tail = tail->prev;
-//     if(tail != NULL){
-//         tail->next = NULL;
-//     }else{
-//         head = NULL;
-//     }
-//     std::cout << "Element " << current->data << " deleted" << std::endl;
-//     delete current;
-// }

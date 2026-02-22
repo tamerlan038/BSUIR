@@ -8,6 +8,12 @@
 
 - [ТМОИС](https://github.com/tamerlan038/BSUIR/tree/semester-1/ТМОИС)
 
+### [Второй семестр (2025 - 2026)](https://github.com/tamerlan038/BSUIR/tree/semester-2)
+
+- [ОАиП](https://github.com/tamerlan038/BSUIR/tree/semester-2/ОАиП)
+
+- [ПиОИвИС](https://github.com/tamerlan038/BSUIR/tree/semester-2/ПиОИвИС)
+
 # Мини игры и задания
 
 - [№1](https://github.com/tamerlan038/BSUIR/tree/tasks/tasks/%E2%84%961)

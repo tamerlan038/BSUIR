@@ -45,54 +45,25 @@ int main(){
         std::cout << std::endl;
     }
 
-//     int sum = 0;
-//     for(int i = 1; i < n; i++) {
-//         for(int j = 0; j < i; j++) {
-//             sum += a[i][j];
-//         }
-//     } 
-//     std::cout << "Сумма элементов, лежащих ниже главной диогонали: " << sum << std::endl;
-
-//     int multi = 1;
-//     for(int i = 0; i < n - 1; i++) {
-//         for(int j = 0; j < m - 1; j++) {
-//             multi *= a[i][j];
-//         }
-//         m--;
-//     } 
-//     std::cout << "Произведение элементов, лежащих над побочной диогональю: " << multi;
-
-//     for(int i = 0; i < n; i++) {
-//         delete[] a[i];
-//     }
-//     delete[] a;
-// }
-//     double *x;
-//     for(int i = 0; i < 1; i += 1) {
-//         for(int j = 0; j < 1; j += 1) {
-//             x = &a[0][0];
-//             std::cout << *x;
-//         }
-//     }
-// }
-
-    double max_1 = a[0][0];
-    std::cout << "Главная диагональ: ";
-    for(int i = 0; i < n; i++) {
-        std::cout << a[i][i] << " ";
-        if(a[i][i] > max_1) {
-            max_1 = a[i][i];
+    int sum = 0;
+    for(int i = 1; i < n; i++) {
+        for(int j = 0; j < i; j++) {
+            sum += a[i][j];
         }
-    }
-    std::cout << "\nНаибольший элемент главной диагонали: " << max_1 << std::endl;
+    } 
+    std::cout << "Сумма элементов, лежащих ниже главной диогонали: " << sum << std::endl;
 
-    double max_2 = a[0][n-1];
-    std::cout << "Побочная диагональ: ";
-    for(int i = 0; i < n; i++) {
-        std::cout << a[i][n - 1 - i] << " ";
-        if(a[i][n - 1 - i] > max_2) {
-            max_2 = a[i][n - 1 - i];
+    int multi = 1;
+    for(int i = 0; i < n - 1; i++) {
+        for(int j = 0; j < m - 1; j++) {
+            multi *= a[i][j];
         }
+        m--;
+    } 
+    std::cout << "Произведение элементов, лежащих над побочной диогональю: " << multi;
+
+    for(int i = 0; i < n; i++) {
+        delete[] a[i];
     }
-    std::cout << "\nНаибольший элемент побочной диагонали: " << max_2 << std::endl;
+    delete[] a;
 }

@@ -16,13 +16,6 @@ int main(){
         return 1;
     }
 
-
-    // if (t<1 || t>3){
-    //     std::cout << "Incorrect data input";
-
-    //     return 1;
-    // }
-
     std::cout << "Enter z: ";
     std::cin >> z;
 

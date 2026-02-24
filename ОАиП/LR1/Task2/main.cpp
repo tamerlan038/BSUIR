@@ -29,5 +29,3 @@ int main()
    
     return 0;
 }
-
-//  1.0/4.0 + sqrt(exp(fabs(x-y)))

@@ -12,7 +12,7 @@
 
 - [ОАиП](https://github.com/tamerlan038/BSUIR/tree/semester-2/ОАиП)
 
-- [ПиОИвИС](https://github.com/tamerlan038/BSUIR/tree/semester-2/ПиОИвИС)
+- [ПиОИвИС](https://github.com/tamerlan038/BSUIR/tree/semester-2/PiOIvIS)
 
 # Мини игры и задания
 

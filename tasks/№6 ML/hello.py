@@ -12,10 +12,9 @@ if os.path.isfile(FILENAME):
     b = data["b"]
 
 else:
-    np.random.seed(42)  # Для воспроизводимости
+    np.random.seed(42)
     w = np.random.rand(3, 4)
     b = np.random.rand(1, 4)
-# Проверка (опционально)
 print(f"w shape: {w.shape}, b shape: {b.shape}")
 
 def sigmoid(x: ndarray) -> ndarray:
@@ -25,7 +24,7 @@ def loss(y: ndarray, p: ndarray) -> float:
     return np.sum((p - y) ** 2)
 
 def loss_grad(y: ndarray, p: ndarray) -> ndarray:
-    return 2 * (p - y)  # ✅ ИСПРАВЛЕНО: (y-p) -> (p-y)
+    return 2 * (p - y)
 
 def sigmoid_grad(x: ndarray) -> ndarray:
     s = sigmoid(x)
@@ -53,13 +52,12 @@ for i in range(EPOCHES):
     y = rgb_to_cmyk(x)
 
     # Forward pass
-    N = x @ w + b          # @ предпочтительнее для матриц
+    N = x @ w + b 
     p = sigmoid(N)
     
     current_loss = loss(y, p)
     accumulated_loss += current_loss
 
-    # Вывод средней ошибки за период
     if (i + 1) % EVAL_EVERY == 0:
         mean_loss = accumulated_loss / EVAL_EVERY
         print(f"Step {i+1} | Mean Loss (last {EVAL_EVERY}): {mean_loss:.6f}")
@@ -72,13 +70,12 @@ for i in range(EPOCHES):
         accumulated_loss = 0.0
 
 
-    # Backward pass
-    dlds = loss_grad(y, p)       # (1, 4) ∂L/∂p
-    dsdn = sigmoid_grad(N)       # (1, 4) ∂p/∂N
-    dldn = dlds * dsdn           # (1, 4) ∂L/∂N (chain rule)
+    dlds = loss_grad(y, p)
+    dsdn = sigmoid_grad(N)
+    dldn = dlds * dsdn
 
-    dldb = dldn                  # (1, 4) ∂L/∂b
-    dldw = x.T @ dldn            # (3, 4) ∂L/∂w (матричное умножение)
+    dldb = dldn
+    dldw = x.T @ dldn
 
     w -= dldw * LEARNING_RATE
     b -= dldb * LEARNING_RATE
